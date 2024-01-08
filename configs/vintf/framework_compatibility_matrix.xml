@@ -1,0 +1,141 @@
+<compatibility-matrix version="5.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.log</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILog</name>
+            <instance>ATMWiFiHidlServer</instance>
+            <instance>ConnsysFWHidlServer</instance>
+            <instance>LoggerHidlServer</instance>
+            <instance>MobileLogHidlServer</instance>
+            <instance>ModemLogHidlServer</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.radio</name>
+        <version>1.2</version>
+        <version>1.6</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>em1</instance>
+            <instance>em2</instance>
+            <instance>em3</instance>
+            <instance>em4</instance>
+            <instance>imsAospSlot1</instance>
+            <instance>imsAospSlot2</instance>
+            <instance>imsAospSlot3</instance>
+            <instance>imsAospSlot4</instance>
+            <instance>se1</instance>
+            <instance>se2</instance>
+            <instance>se3</instance>
+            <instance>se4</instance>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+            <instance>slot4</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.radio</name>
+        <version>1.2</version>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.engmode</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehEngmode</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+        <hal format="aidl">
+        <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
+        <fqname>ISehHyPer/default</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IComposer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.widevine.keyprov</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehWidevineKeyProvisioning</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.vaultkeeper</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehVaultKeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.hqm</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehHqm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.tlc.kg</name>
+        <version>1.1</version>
+        <interface>
+            <name>ISehKg</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.wifi.hostapd</name>
+        <version>4.0</version>
+        <interface>
+            <name>ISehHostapd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.wifi</name>
+        <version>2.3</version>
+        <interface>
+            <name>ISehWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>2.1</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.health</name>
+        <version>2.0</version>
+        <interface>
+            <name>ISehHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
