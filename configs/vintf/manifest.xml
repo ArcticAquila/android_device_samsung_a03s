@@ -1,3 +1,37 @@
+<!--
+    Input:
+        manifest_sensor_hidl_v2.xml
+        manifest_audio.xml
+        manifest_dsds.xml
+        manifest_radioconfig.xml
+        manifest_trustonic.xml
+        manifest_log.xml
+        manifest_mdmonitor.xml
+        manifest_aee.xml
+        manifest_netdagent.xml
+        manifest_tetheroffloadservice.xml
+        manifest_mmservice.xml
+        manifest_mmagent.xml
+        manifest_dmc.xml
+        manifest_apmonitor.xml
+        manifest_composer.xml
+        manifest_mediatek.xml
+        manifest.xml
+        manifest.xml
+        manifest.xml
+        manifest.xml
+        skeymaster_v4_manifest.xml
+        manifest.xml
+        manifest.xml
+        manifest_target_level_r.xml
+        manifest.xml
+        manifest.a03s_fps.xml
+        manifest.xml
+        manifest_gnss_2_1.xml
+        manifest_isehgnss_2_0.xml
+        radio_manifest_ds.xml
+        radio_manifest_ds.xml
+-->
 <manifest version="4.0" type="device" target-level="5">
     <hal format="hidl">
         <name>android.hardware.audio</name>
@@ -7,6 +41,7 @@
             <name>IDevicesFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@7.0::IDevicesFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
@@ -16,6 +51,7 @@
             <name>IEffectsFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.biometrics.face</name>
@@ -25,6 +61,7 @@
             <name>IBiometricsFace</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IBiometricsFace/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
@@ -34,6 +71,7 @@
             <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
@@ -43,6 +81,7 @@
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
@@ -52,6 +91,7 @@
             <name>ICameraProvider</name>
             <instance>internal/0</instance>
         </interface>
+        <fqname>@2.6::ICameraProvider/internal/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -61,6 +101,7 @@
             <name>IGatekeeper</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.gnss</name>
@@ -71,6 +112,8 @@
             <name>IGnss</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::IGnss/default</fqname>
+        <fqname>@2.1::IGnss/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
@@ -80,6 +123,7 @@
             <name>IAllocator</name>
             <instance>default</instance>
         </interface>
+        <fqname>@4.0::IAllocator/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
@@ -89,6 +133,7 @@
             <name>IComposer</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.1::IComposer/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
@@ -98,6 +143,7 @@
             <name>IMapper</name>
             <instance>default</instance>
         </interface>
+        <fqname>@4.0::IMapper/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.keymaster</name>
@@ -107,6 +153,7 @@
             <name>IKeymasterDevice</name>
             <instance>default</instance>
         </interface>
+        <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
@@ -120,6 +167,8 @@
             <name>IOmxStore</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IOmx/default</fqname>
+        <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.memtrack</name>
@@ -129,6 +178,7 @@
             <name>IMemtrack</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
@@ -137,6 +187,10 @@
     <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
+        <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.2::ISap/slot2</fqname>
+        <fqname>@1.5::IRadio/slot1</fqname>
+        <fqname>@1.5::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio.config</name>
@@ -146,6 +200,7 @@
             <name>IRadioConfig</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio.deprecated</name>
@@ -159,6 +214,7 @@
             <name>ISensors</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
@@ -168,6 +224,7 @@
             <name>IOffloadConfig</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IOffloadConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.control</name>
@@ -177,6 +234,7 @@
             <name>IOffloadControl</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::IOffloadControl/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.thermal</name>
@@ -187,6 +245,8 @@
             <name>IThermal</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IThermal/default</fqname>
+        <fqname>@2.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.egistec.hardware.fingerprint</name>
@@ -196,6 +256,7 @@
             <name>IBiometricsFingerprintRbs</name>
             <instance>default</instance>
         </interface>
+        <fqname>@4.0::IBiometricsFingerprintRbs/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.fpsensor.hardware.fpsensorhidlsvc</name>
@@ -205,6 +266,7 @@
             <name>IFpsensorHidlSvc</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::IFpsensorHidlSvc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.aee</name>
@@ -215,6 +277,8 @@
             <instance>AEE</instance>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::IAee/AEE</fqname>
+        <fqname>@1.1::IAee/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.apmonitor</name>
@@ -224,6 +288,7 @@
             <name>IApmService</name>
             <instance>apm_hidl_service</instance>
         </interface>
+        <fqname>@2.0::IApmService/apm_hidl_service</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.mediatek.hardware.atci</name>
@@ -237,6 +302,7 @@
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.2::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.composer_ext</name>
@@ -246,6 +312,7 @@
             <name>IComposerExt</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IComposerExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.dmc</name>
@@ -255,6 +322,7 @@
             <name>IDmcService</name>
             <instance>dmc_hidl_service</instance>
         </interface>
+        <fqname>@1.2::IDmcService/dmc_hidl_service</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.log</name>
@@ -268,6 +336,11 @@
             <instance>MobileLogHidlServer</instance>
             <instance>ModemLogHidlServer</instance>
         </interface>
+        <fqname>@1.0::ILog/ATMWiFiHidlServer</fqname>
+        <fqname>@1.0::ILog/ConnsysFWHidlServer</fqname>
+        <fqname>@1.0::ILog/LoggerHidlServer</fqname>
+        <fqname>@1.0::ILog/MobileLogHidlServer</fqname>
+        <fqname>@1.0::ILog/ModemLogHidlServer</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mdmonitor</name>
@@ -277,6 +350,7 @@
             <name>IMDMonitorService</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IMDMonitorService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mmagent</name>
@@ -286,6 +360,7 @@
             <name>IMMAgent</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::IMMAgent/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mms</name>
@@ -295,6 +370,7 @@
             <name>IMms</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.6::IMms/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mtkpower</name>
@@ -308,6 +384,8 @@
             <name>IMtkPower</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.2::IMtkPerf/default</fqname>
+        <fqname>@1.2::IMtkPower/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.mediatek.hardware.mtkradioex</name>
@@ -321,6 +399,7 @@
             <name>INetdagent</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::INetdagent/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.nvram</name>
@@ -330,6 +409,7 @@
             <name>INvram</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::INvram/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.mediatek.hardware.videotelephony</name>
@@ -343,6 +423,7 @@
             <name>ISehBiometricsFace</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::ISehBiometricsFace/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth.audio</name>
@@ -352,6 +433,7 @@
             <name>ISehBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.1::ISehBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.samsung.hardware.gnss</name>
@@ -361,6 +443,7 @@
             <name>ISehGnss</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::ISehGnss/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.miscpower</name>
@@ -370,6 +453,7 @@
             <name>ISehMiscPower</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::ISehMiscPower/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio</name>
@@ -380,6 +464,8 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
+        <fqname>@2.2::ISehRadio/slot1</fqname>
+        <fqname>@2.2::ISehRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio.bridge</name>
@@ -390,6 +476,8 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
+        <fqname>@2.0::ISehBridge/slot1</fqname>
+        <fqname>@2.0::ISehBridge/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio.channel</name>
@@ -402,6 +490,10 @@
             <instance>imsd</instance>
             <instance>imsd2</instance>
         </interface>
+        <fqname>@2.0::ISehChannel/epdgd</fqname>
+        <fqname>@2.0::ISehChannel/epdgd2</fqname>
+        <fqname>@2.0::ISehChannel/imsd</fqname>
+        <fqname>@2.0::ISehChannel/imsd2</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.samsung.hardware.security.drk</name>
@@ -411,6 +503,7 @@
             <name>ISehDrk</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::ISehDrk/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.sysinput</name>
@@ -423,6 +516,7 @@
             <name>ISehSysInputDev</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.3::ISehSysInputDev/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.tlc.ucm</name>
@@ -432,6 +526,7 @@
             <name>ISehUcm</name>
             <instance>default</instance>
         </interface>
+        <fqname>@2.0::ISehUcm/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.wifi.supplicant</name>
@@ -441,6 +536,7 @@
             <name>ISehSupplicant</name>
             <instance>default</instance>
         </interface>
+        <fqname>@3.1::ISehSupplicant/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.silead.hardware.fingerprintext</name>
@@ -450,5 +546,12 @@
             <name>ISileadFingerprint</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::ISileadFingerprint/default</fqname>
     </hal>
+    <!--
+    <sepolicy>
+        <version>31.0</version>
+    </sepolicy>
+    <kernel target-level="5"/>
+    -->
 </manifest>
