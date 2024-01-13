@@ -157,7 +157,6 @@
             <name>ISehWidevineKeyProvisioning</name>
             <name>IPower</name>
             <instance>default</instance>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
