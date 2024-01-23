@@ -1,248 +1,271 @@
 <compatibility-matrix version="5.0" type="framework">
-    <hal format="hidl" optional="true">
-        <name>vendor.mediatek.hardware.log</name>
-        <version>1.0</version>
-        <interface>
-            <name>ILog</name>
-            <instance>ATMWiFiHidlServer</instance>
-            <instance>ConnsysFWHidlServer</instance>
-            <instance>LoggerHidlServer</instance>
-            <instance>MobileLogHidlServer</instance>
-            <instance>ModemLogHidlServer</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.radio</name>
-        <version>1.2</version>
-        <version>1.6</version>
-        <interface>
-            <name>IRadio</name>
-            <instance>em1</instance>
-            <instance>em2</instance>
-            <instance>em3</instance>
-            <instance>em4</instance>
-            <instance>imsAospSlot1</instance>
-            <instance>imsAospSlot2</instance>
-            <instance>imsAospSlot3</instance>
-            <instance>imsAospSlot4</instance>
-            <instance>se1</instance>
-            <instance>se2</instance>
-            <instance>se3</instance>
-            <instance>se4</instance>
-            <instance>default</instance>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-            <instance>slot3</instance>
-            <instance>slot4</instance>
-        </interface>
-        <interface>
-            <name>ISap</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-            <instance>slot3</instance>
-            <instance>slot4</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>android.hardware.radio</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::ISap/slot1</fqname>
-        <fqname>@1.2::ISap/slot2</fqname>
-        <fqname>@1.5::IRadio/slot1</fqname>
-        <fqname>@1.5::IRadio/slot2</fqname>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>android.hardware.radio.config</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IDumpstateDevice</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal override="true" format="hidl">
-        <name>android.hardware.health</name>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.health</name>
-        <version>2.0</version>
-        <interface>
-            <name>ISehHealth</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.usb</name>
-        <version>1.3</version>
-        <interface>
-            <name>IUsb</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.wifi.hostapd</name>
-        <version>1.3</version>
-        <interface>
-            <name>IHostapd</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.wifi.supplicant</name>
-        <version>1.4</version>
-        <interface>
-            <name>ISupplicant</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.wifi</name>
-        <version>1.5</version>
-        <interface>
-            <name>IWifi</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>android.hardware.radio.deprecated</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.hyper</name>
-        <interface>
-            <name>ISehHyPer</name>
-            <instance>default</instance>
-        </interface>
-        <version>2</version>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.light</name>
-        <interface>
-            <name>ILights</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.drm</name>
-        <version>1.4</version>
-        <interface>
-            <name>ICryptoFactory</name>
-            <instance>clearkey</instance>
-            <instance>widevine</instance>
-        </interface>
-        <interface>
-            <name>IDrmFactory</name>
-            <instance>clearkey</instance>
-            <instance>widevine</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.drm</name>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.graphics.composer</name>
-        <version>2.1</version>
-        <interface>
-            <name>IComposer</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.security.widevine.keyprov</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISehWidevineKeyProvisioning</name>
-            <instance>default</instance>
-        </interface>
-	</hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>2</version>
-        <interface>
-            <name>ISehWidevineKeyProvisioning</name>
-            <name>IPower</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.media.c2</name>
-        <version>1.2</version>
-        <interface>
-            <name>IComponentStore</name>
-            <instance>default</instance>
-            <instance>default0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.security.vaultkeeper</name>
-        <version>2.0</version>
-        <interface>
-            <name>ISehVaultKeeper</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.hqm</name>
-        <version>1.0</version>
-        <interface>
-            <name>ISehHqm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.tlc.kg</name>
-        <version>1.1</version>
-        <interface>
-            <name>ISehKg</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.vibrator</name>
-        <version>2</version>
-        <interface>
-            <name>IVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.wifi.hostapd</name>
-        <version>4.0</version>
-        <interface>
-            <name>ISehHostapd</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.wifi</name>
-        <version>2.3</version>
-        <interface>
-            <name>ISehWifi</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <version>2.1</version>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.cas</name>
-        <version>1.2</version>
-        <interface>
-            <name>IMediaCasService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.dumpstate</name>
-        <version>1.1</version>
-        <interface>
-            <name>IDumpstateDevice</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio.effect</name>
+    <version>7.0</version>
+    <interface>
+        <name>IEffectsFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.audio</name>
+    <version>7.0</version>
+    <interface>
+        <name>IDevicesFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.bluetooth.audio</name>
+    <version>2.0-1</version>
+    <interface>
+        <name>IBluetoothAudioProvidersFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="aidl" optional="true">
+    <name>android.hardware.power</name>
+    <interface>
+        <name>IPower</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>ISap</name>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.tetheroffload.control</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IOffloadControl</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.egistec.hardware.fingerprint</name>
+    <version>4.0</version>
+    <interface>
+        <name>IBiometricsFingerprintRbs</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.fpsensor.hardware.fpsensorhidlsvc</name>
+    <version>2.0</version>
+    <interface>
+        <name>IFpsensorHidlSvc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.aee</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IAee</name>
+        <instance>AEE</instance>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.apmonitor</name>
+    <version>2.0</version>
+    <interface>
+        <name>IApmService</name>
+        <instance>apm_hidl_service</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.bluetooth.audio</name>
+    <version>2.0-2</version>
+    <interface>
+        <name>IBluetoothAudioProvidersFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.composer_ext</name>
+    <version>1.0</version>
+    <interface>
+        <name>IComposerExt</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.dmc</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IDmcService</name>
+        <instance>dmc_hidl_service</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.log</name>
+    <version>1.0</version>
+    <interface>
+        <name>ILog</name>
+        <instance>ATMWiFiHidlServer</instance>
+        <instance>ConnsysFWHidlServer</instance>
+        <instance>LoggerHidlServer</instance>
+        <instance>MobileLogHidlServer</instance>
+        <instance>ModemLogHidlServer</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mdmonitor</name>
+    <version>1.0</version>
+    <interface>
+        <name>IMDMonitorService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mmagent</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IMMAgent</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mms</name>
+    <version>1.0-6</version>
+    <interface>
+        <name>IMms</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mtkpower</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IMtkPerf</name>
+        <instance>default</instance>
+    </interface>
+    <interface>
+        <name>IMtkPower</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.netdagent</name>
+    <version>1.0</version>
+    <interface>
+        <name>INetdagent</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.nvram</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>INvram</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.biometrics.face</name>
+    <version>2.0</version>
+    <interface>
+        <name>ISehBiometricsFace</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.bluetooth.audio</name>
+    <version>2.0-1</version>
+    <interface>
+        <name>ISehBluetoothAudioProvidersFactory</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.gnss</name>
+    <version>2.0</version>
+    <interface>
+        <name>ISehGnss</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.miscpower</name>
+    <version>2.0</version>
+    <interface>
+        <name>ISehMiscPower</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.radio.bridge</name>
+    <version>2.0</version>
+    <interface>
+        <name>ISehBridge</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.radio.channel</name>
+    <version>2.0</version>
+    <interface>
+        <name>ISehChannel</name>
+        <instance>epdgd</instance>
+        <instance>epdgd2</instance>
+        <instance>imsd</instance>
+        <instance>imsd2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.radio</name>
+    <version>2.0-2</version>
+    <interface>
+        <name>ISehRadio</name>
+        <instance>slot1</instance>
+        <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.security.drk</name>
+    <version>2.0</version>
+    <interface>
+        <name>ISehDrk</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.sysinput</name>
+    <version>1.0-3</version>
+    <interface>
+        <name>ISehSysInputDev</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.tlc.ucm</name>
+    <version>2.0</version>
+    <interface>
+        <name>ISehUcm</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.samsung.hardware.wifi.supplicant</name>
+    <version>3.0-1</version>
+    <interface>
+        <name>ISehSupplicant</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.silead.hardware.fingerprintext</name>
+    <version>1.0</version>
+    <interface>
+        <name>ISileadFingerprint</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
