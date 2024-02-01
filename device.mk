@@ -62,6 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_PACKAGES += \
+    fstab.ramplus \
     fstab.mt6765 \
     init.mt6765.rc \
     init.mt6765.usb.rc
