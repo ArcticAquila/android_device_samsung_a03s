@@ -68,6 +68,9 @@ PRODUCT_PACKAGES += \
     init.mt6765.usb.rc
     
 
+# SELINUX
+## PLEASE REMOVE IF SELINUX WITH ENFORCING IS WORKING
+PRODUCT_PACKAGES += init.selinux.rc
+
 # Power
 PRODUCT_PACKAGES += \
-    
