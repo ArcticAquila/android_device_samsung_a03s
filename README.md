@@ -45,8 +45,11 @@ source build/envsetup.sh
 ```
 3. Choose the device
 ```
-lunch aosp_a03s-($VARIANT)
+lunch aosp_a03s-$(VARIANT)
 ```
+### Tips and tricks
+When building lineage run this command
+```bash tools/change-version.sh lineage```
 
 ## Product
 ### Custom Recovery
