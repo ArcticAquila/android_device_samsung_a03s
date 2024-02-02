@@ -31,8 +31,12 @@ Rear camera 3 | 2 MP, f/2.4, (depth)
 Front camera | 5 MP, f/2.2
 
 ## Resources
-- [Vendor Files](https://github.com/ArcticAquila/android_vendor_samsung_a03s)
-- [Kernel Files](https://github.com/ArcticAquila/android_kernel_samsung_a03s)
+- [Stock Prebuilt Vendor Files](https://github.com/ArcticAquila/android_vendor_samsung_a03s)
+- [Stock Source Kernel Files](https://github.com/ArcticAquila/android_kernel_samsung_a03s)
+
+##### Credit for [Hirozuto](https://github.com/Hirozuto) For OSS Kernel
+- [OSS Source Kernel Files](https://github.com/Hirozuto/android_kernel_samsung_a03s-oss) 
+- [OSS Source Kernel Files With Patch (Not Now)](https://github.com/ArcticAquila/android_kernel_samsung_a03s-oss)
 
 ## Building
 1. Clone the device tree
