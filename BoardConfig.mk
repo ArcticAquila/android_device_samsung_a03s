@@ -95,7 +95,7 @@ TARGET_COPY_OUT_ODM := odm
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
-ifeq ($(wildcard vendor/samsung/a03s/a03s-samsung.mk),)
+ifeq ($(wildcard vendor/samsung/a03s/Android.mk),)
     BUILD_WITHOUT_VENDOR := true
 endif
 
