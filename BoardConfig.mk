@@ -144,7 +144,7 @@ TARGET_RECOVERY_INITRC := \
     $(DEVICE_PATH)/recovery/root/init.recovery.samsung.rc
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/configs/odm.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/vendor.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/system.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/product.prop
+#TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+#TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+#TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+#TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
