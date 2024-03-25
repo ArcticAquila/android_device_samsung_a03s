@@ -17,20 +17,36 @@
 import common
 import re
 
-def FullOTA_InstallBegin(info):
+def FullOTA_Assertions(info, metadata):
+    pre_timestamp = GetBuildProp("ro.build.date.utc", OPTIONS.source_info_dict)
     info.script.Print("========================================")
-    info.script.Print("Testing build by ArcticAquila")
-    info.script.Print("Dont use this for daily driver")
-    info.script.Print("Build Number v4")
+    info.script.Print("Testing build")
+    info.script.Print("Dont use for daily")
+    info.script.Print("Build Date: " + pre_timestamp)
     info.script.Print("========================================")
     return
 
-def FullOTA_InstallEnd(info):
-    OTA_InstallEnd(info)
+def FullOTA_InstallBegin():
     return
 
-def IncrementalOTA_InstallEnd(info):
-    OTA_InstallEnd(info)
+def FullOTA_InstallEnd():
+    OTA_InstallEnd()
+    return
+
+def IncrementalOTA_Assertions():
+    return
+
+def IncrementalOTA_VerifyBegin():
+    return
+
+def IncrementalOTA_VerifyEnd():
+    return
+
+def IncrementalOTA_InstallBegin():
+    return
+
+def IncrementalOTA_InstallEnd():
+    OTA_InstallEnd()
     return
 
 def AddImage(info, basename, dest):
