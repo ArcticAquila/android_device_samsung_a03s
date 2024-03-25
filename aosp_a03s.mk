@@ -11,11 +11,14 @@ $(call inherit-product-if-exists, packages/modules/Virtualization/apex/product_p
 # Inherit some common AOSP stuff.
 $(call inherit-product-if-exists, vendor/aosp/config/common_full_phone.mk)
 
+# Include GSI keys
+$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Inherit from a03s device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Inherit some vendor files (Optional)
-$(call inherit-product-if-exists, vendor/samsung/a03s/a03s-samsung.mk)
+$(call inherit-product-if-exists, vendor/samsung/a03s/a03s-vendor.mk)
 
 # Inherit keyfiles (Personal) (Optional)
 ifneq ($(wildcard vendor/extra/product.mk),)
@@ -35,7 +38,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-A037F
 
 TARGET_GAPPS_ARCH := arm64
-PRODUCT_GMS_CLIENTID_BASE := android-samsung
+PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	TARGET_PRODUCT="a03s"
